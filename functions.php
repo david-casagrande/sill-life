@@ -2,11 +2,13 @@
   $template_directory = get_template_directory();
 
   include($template_directory.'/functions/clean_wp_header.php');
+  include($template_directory.'/functions/enque_styles.php');
 
-  function register_styles() {
-    wp_register_style('still_life', get_template_directory_uri().'/css/still-life.css');
-    wp_enqueue_style('still_life');
+  function register_menus() {
+    $menus = array(
+      'main-nav' => __('Main Nav')
+    );
+    register_nav_menus($menus);
   }
-
-  add_action('wp_enqueue_scripts', 'register_styles');
+  add_action( 'init', 'register_menus' );
 ?>

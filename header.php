@@ -8,3 +8,13 @@
 </head>
 
 <body>
+  <?php
+    $sill_life_classes = array('sill-life', 'large-8', 'medium-10', 'small-10', 'columns',
+    'large-centered', 'medium-centered', 'small-centered');
+    if(!is_home()) { $sill_life_classes[] = 'with-background'; }
+  ?>
+  <div class="<?php echo join(' ', $sill_life_classes); ?>">
+    <div class="header">
+      <?php include('templates/logo.php'); ?>
+      <?php include('templates/main-nav.php'); ?>
+    </div>

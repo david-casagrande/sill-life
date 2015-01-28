@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+
+  .logo {
+    text-align: center;
+    //padding-top: 20px;
+  }
+
+  .main-nav {
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+
+    a:hover,
+    .current-menu-item a {
+      color: #000;
+    }
+
+  }
+
+}
