@@ -3,7 +3,7 @@
     'post_type' => 'terrariums',
     'post_label' => 'Terrariums',
     'post_new_item_label' => 'Add a New Terrarium',
-    'post_slug' => 'terrariums',
+    'post_slug' => '_terrariums',
     //'post_menu_icon' => 'palette.png',
     //'taxonomy_type' => 'artwork-category',
     //'taxonomy_label' => 'Artwork',
