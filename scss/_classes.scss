@@ -1,0 +1,19 @@
+@import './foundation/functions';
+
+.classes {
+
+  padding-bottom: 1rem;
+
+  .class-date {
+    font-size: rem-calc(24);
+  }
+
+  .days-of-the-week {
+    font-size: rem-calc(20);
+  }
+
+  .time {
+    font-size: rem-calc(22);
+  }
+
+}
