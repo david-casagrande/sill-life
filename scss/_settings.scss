@@ -1,5 +1,6 @@
 $background-color: #a79b94;
 $header-color: #1a7f65;
+$header-color-2: #ca9e62;
 $custom-font: 'Roboto Slab', serif;
 
 %background-color {
@@ -12,6 +13,10 @@ $custom-font: 'Roboto Slab', serif;
 
 %header-color {
   color: $header-color;
+}
+
+%header-color-2 {
+  color: $header-color-2;
 }
 
 %custom-font {

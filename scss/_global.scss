@@ -16,6 +16,20 @@ body {
   background-size: cover;
 }
 
+@each $font-weight in 100, 300, 400, 700 {
+  .font-weight-#{$font-weight} {
+    font-weight: $font-weight !important;
+  }
+}
+
+.header-color {
+  color: $header-color !important;
+}
+
+.header-color-2 {
+  color: $header-color-2 !important;
+}
+
 .sill-life {
   @extend %min-height-100;
 

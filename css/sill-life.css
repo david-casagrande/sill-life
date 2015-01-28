@@ -4,6 +4,9 @@ body, .sill-life.with-background {
 html, body, .sill-life {
   min-height: 100%; }
 
+.terrarium-title {
+  color: #ca9e62; }
+
 body {
   font-family: 'Roboto Slab', serif; }
 
@@ -2159,6 +2162,9 @@ body, .sill-life.with-background {
 html, body, .sill-life {
   min-height: 100%; }
 
+.terrarium-title {
+  color: #ca9e62; }
+
 body {
   font-family: 'Roboto Slab', serif; }
 
@@ -2167,6 +2173,9 @@ body, .sill-life.with-background {
 
 html, body, .sill-life {
   min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
 
 body {
   font-family: 'Roboto Slab', serif; }
@@ -2180,6 +2189,24 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.font-weight-100 {
+  font-weight: 100 !important; }
+
+.font-weight-300 {
+  font-weight: 300 !important; }
+
+.font-weight-400 {
+  font-weight: 400 !important; }
+
+.font-weight-700 {
+  font-weight: 700 !important; }
+
+.header-color {
+  color: #1a7f65 !important; }
+
+.header-color-2 {
+  color: #ca9e62 !important; }
 
 .content {
   margin: 0 2rem;
@@ -2203,3 +2230,7 @@ body {
       font-weight: 300; }
     .header .main-nav a:hover, .header .main-nav .current-menu-item a {
       color: #000; }
+
+.care-instructions > h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.313rem; }
