@@ -3,7 +3,7 @@ var gulp = require('gulp')
 var minifyCSS = require('gulp-minify-css')
 var rename = require("gulp-rename")
 var sass = require('gulp-sass')
-var sourcemaps = require('gulp-sourcemaps')
+//var sourcemaps = require('gulp-sourcemaps')
 
 var scssPath = ['./scss/**/*.scss', './bower_components/foundation/scss/**/*.scss']
 
