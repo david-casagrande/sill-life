@@ -9,7 +9,7 @@
 
 <body>
   <?php
-    $sill_life_classes = array('sill-life', 'large-8', 'medium-10', 'small-10', 'columns',
+    $sill_life_classes = array('sill-life', 'large-8', 'medium-10', 'small-12', 'columns',
     'large-centered', 'medium-centered', 'small-centered');
     if(!is_home()) { $sill_life_classes[] = 'with-background'; }
   ?>
