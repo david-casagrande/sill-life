@@ -1,7 +1,7 @@
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
-html, body, .sill-life {
+.sill-life {
   min-height: 100%; }
 
 .terrarium-title {
@@ -2159,7 +2159,7 @@ blockquote, blockquote p {
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
-html, body, .sill-life {
+.sill-life {
   min-height: 100%; }
 
 .terrarium-title {
@@ -2171,7 +2171,7 @@ body {
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
-html, body, .sill-life {
+.sill-life {
   min-height: 100%; }
 
 .terrarium-title {
@@ -2179,9 +2179,6 @@ html, body, .sill-life {
 
 body {
   font-family: 'Roboto Slab', serif; }
-
-html {
-  height: 100%; }
 
 body {
   background-image: url("../images/bg.jpg");
@@ -2202,16 +2199,39 @@ body {
 .font-weight-700 {
   font-weight: 700 !important; }
 
+.no-padding-top {
+  padding-top: 0 !important; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-padding-left {
+  padding-left: 0 !important; }
+
 .header-color {
   color: #1a7f65 !important; }
 
 .header-color-2 {
   color: #ca9e62 !important; }
 
+.sill-life {
+  padding-bottom: 0.5rem; }
+
 .content {
-  margin: 0 2rem;
+  margin: 0 2rem 2rem 2rem;
   padding-top: 1rem;
   background-color: #fff; }
+
+.content-padding-side {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.content-padding-top {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .narrative img {
   padding-bottom: 1rem; }
@@ -2219,21 +2239,59 @@ body {
 .header {
   position: relative; }
   .header .logo {
-    text-align: center; }
+    text-align: center;
+    padding-top: 20px; }
   .header .main-nav {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem; }
     .header .main-nav a {
       color: #fff;
-      font-size: 1.125rem;
-      font-weight: 300; }
+      font-size: 1.25rem;
+      font-weight: 100; }
     .header .main-nav a:hover, .header .main-nav .current-menu-item a {
       color: #000; }
+
+body, .sill-life.with-background {
+  background-color: #a79b94; }
+
+.sill-life {
+  min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
+
+body {
+  font-family: 'Roboto Slab', serif; }
+
+.terrarium {
+  padding-bottom: 2rem; }
+
+.terrarium-title {
+  border-top: 1px solid #ccc;
+  padding-top: 2rem; }
 
 .care-instructions > h3 {
   font-size: 1.25rem;
   margin-bottom: 0.313rem; }
+
+body, .sill-life.with-background {
+  background-color: #a79b94; }
+
+.sill-life {
+  min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
+
+body {
+  font-family: 'Roboto Slab', serif; }
+
+.classes-overview {
+  border-bottom: 1px solid #ccc; }
+
+.all-classes {
+  padding-bottom: 1.5rem; }
 
 .classes {
   padding-bottom: 1rem; }
