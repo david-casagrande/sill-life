@@ -5,7 +5,7 @@
   $time = get_field('time');
 ?>
 
-<div class="<?php echo $columns; ?> columns classes">
+<div class="classes">
   <?php
     echo "<div class=\"class-date font-weight-700\">{$date}</div>";
     if($days_of_the_week) {
