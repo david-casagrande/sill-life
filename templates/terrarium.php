@@ -7,19 +7,21 @@
   $image = get_field('image');
   $columns = $image ? 'large-6 medium-6' : 'large-12 medium-12';
 
-  echo "<div class=\"large-12 columns\"><h2 class=\"terrarium-title\">{$terrarium_title}</h2></div>";
-  if($image) {
-    echo "<div class=\"{$columns} columns\"><img src=\"{$image['url']}\" /></div>";
-  }
-  echo "<div class=\"{$columns} columns\">";
-    if($description) {
-      echo "<div class=\"description\">{$description}</div>";
+  echo "<div class=\"terrarium clearfix\">";
+    echo "<div class=\"large-12 columns\"><h2 class=\"terrarium-title\">{$terrarium_title}</h2></div>";
+    if($image) {
+      echo "<div class=\"{$columns} columns\"><img src=\"{$image['url']}\" /></div>";
     }
-    if($care_instructions) {
-      echo "<div class=\"care-instructions\">";
-        echo "<h3 class=\"header-color-2\">Care Instructions</h3>";
-        echo "<div class=\"description\">{$care_instructions}</div>";
-      echo "</div>";
-    }
+    echo "<div class=\"{$columns} columns\">";
+      if($description) {
+        echo "<div class=\"description\">{$description}</div>";
+      }
+      if($care_instructions) {
+        echo "<div class=\"care-instructions\">";
+          echo "<h3 class=\"header-color-2\">Care Instructions</h3>";
+          echo "<div class=\"description\">{$care_instructions}</div>";
+        echo "</div>";
+      }
+    echo "</div>";
   echo "</div>";
 ?>

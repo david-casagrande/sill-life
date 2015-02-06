@@ -1,7 +1,7 @@
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
-html, body, .sill-life {
+.sill-life {
   min-height: 100%; }
 
 .terrarium-title {
@@ -2159,7 +2159,7 @@ blockquote, blockquote p {
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
-html, body, .sill-life {
+.sill-life {
   min-height: 100%; }
 
 .terrarium-title {
@@ -2171,7 +2171,7 @@ body {
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
-html, body, .sill-life {
+.sill-life {
   min-height: 100%; }
 
 .terrarium-title {
@@ -2179,9 +2179,6 @@ html, body, .sill-life {
 
 body {
   font-family: 'Roboto Slab', serif; }
-
-html {
-  height: 100%; }
 
 body {
   background-image: url("../images/bg.jpg");
@@ -2202,14 +2199,29 @@ body {
 .font-weight-700 {
   font-weight: 700 !important; }
 
+.no-padding-top {
+  padding-top: 0 !important; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-padding-left {
+  padding-left: 0 !important; }
+
 .header-color {
   color: #1a7f65 !important; }
 
 .header-color-2 {
   color: #ca9e62 !important; }
 
+.sill-life {
+  padding-bottom: 0.5rem; }
+
 .content {
-  margin: 0 2rem;
+  margin: 0 2rem 2rem 2rem;
   padding-top: 1rem;
   background-color: #fff; }
 
