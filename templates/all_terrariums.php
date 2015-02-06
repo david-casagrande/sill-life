@@ -1,4 +1,4 @@
-<div class="row narrative">
+<div class="row content-padding-side narrative">
   <?php
     $args = array(
       'post_type' => array('terrariums'),

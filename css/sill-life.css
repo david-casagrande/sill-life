@@ -2213,21 +2213,30 @@ body {
   padding-top: 1rem;
   background-color: #fff; }
 
+.content-padding-side {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.content-padding-top {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 .narrative img {
   padding-bottom: 1rem; }
 
 .header {
   position: relative; }
   .header .logo {
-    text-align: center; }
+    text-align: center;
+    padding-top: 20px; }
   .header .main-nav {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem; }
     .header .main-nav a {
       color: #fff;
-      font-size: 1.125rem;
-      font-weight: 300; }
+      font-size: 1.25rem;
+      font-weight: 100; }
     .header .main-nav a:hover, .header .main-nav .current-menu-item a {
       color: #000; }
 

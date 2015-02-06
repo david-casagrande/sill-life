@@ -5,18 +5,19 @@
 
   .logo {
     text-align: center;
-    //padding-top: 20px;
+    padding-top: 20px;
   }
 
   .main-nav {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
+    //margin-top: -5px;
 
     a {
       color: #fff;
-      font-size: rem-calc(18);
-      font-weight: 300;
+      font-size: rem-calc(20);
+      font-weight: 100;
     }
 
     a:hover,
