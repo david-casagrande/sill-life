@@ -1,4 +1,13 @@
 @import './foundation/functions';
+@import './settings';
+
+.classes-overview {
+  border-bottom: $border;
+}
+
+.all-classes {
+  padding-bottom: 1.5rem;
+}
 
 .classes {
 

@@ -13,8 +13,8 @@
     'large-centered', 'medium-centered', 'small-centered');
     if(!is_home()) { $sill_life_classes[] = 'with-background'; }
   ?>
-  <div class="<?php echo join(' ', $sill_life_classes); ?>">
-    <div class="header">
-      <?php include('templates/logo.php'); ?>
-      <?php include('templates/main-nav.php'); ?>
-    </div>
+    <div class="<?php echo join(' ', $sill_life_classes); ?>">
+      <div class="header">
+        <?php include('templates/logo.php'); ?>
+        <?php include('templates/main-nav.php'); ?>
+      </div>

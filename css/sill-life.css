@@ -2252,9 +2252,46 @@ body {
     .header .main-nav a:hover, .header .main-nav .current-menu-item a {
       color: #000; }
 
+body, .sill-life.with-background {
+  background-color: #a79b94; }
+
+.sill-life {
+  min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
+
+body {
+  font-family: 'Roboto Slab', serif; }
+
+.terrarium {
+  padding-bottom: 2rem; }
+
+.terrarium-title {
+  border-top: 1px solid #ccc;
+  padding-top: 2rem; }
+
 .care-instructions > h3 {
   font-size: 1.25rem;
   margin-bottom: 0.313rem; }
+
+body, .sill-life.with-background {
+  background-color: #a79b94; }
+
+.sill-life {
+  min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
+
+body {
+  font-family: 'Roboto Slab', serif; }
+
+.classes-overview {
+  border-bottom: 1px solid #ccc; }
+
+.all-classes {
+  padding-bottom: 1.5rem; }
 
 .classes {
   padding-bottom: 1rem; }

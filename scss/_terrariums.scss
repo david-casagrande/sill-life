@@ -1,5 +1,13 @@
+@import './settings';
+
+.terrarium {
+  padding-bottom: 2rem;
+}
+
 .terrarium-title {
   @extend %header-color-2;
+  border-top: $border;
+  padding-top: 2rem;
 }
 
 .care-instructions {

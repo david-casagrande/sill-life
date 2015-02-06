@@ -1,4 +1,4 @@
-<div class="row content-padding-side narrative">
+<div class="all-classes row content-padding-side narrative">
   <?php
     $columns = $image ? 'large-6 medium-6' : 'large-12 medium-12';
     if($image) {

@@ -9,7 +9,9 @@
             $image = get_field('image');
             $columns = 'large-12 medium-12';
             echo "<div class=\"{$columns} columns\">";
-            the_content();
+              echo "<div class=\"classes-overview\">";
+              the_content();
+              echo "</div>";
             echo "</div>";
           ?>
         <?php
