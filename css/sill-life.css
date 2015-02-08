@@ -2240,7 +2240,8 @@ body {
   position: relative; }
   .header .logo {
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-bottom: 6px; }
   .header .main-nav {
     text-align: center;
     text-transform: uppercase;
