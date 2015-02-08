@@ -4,7 +4,7 @@
     'post_label' => 'Terrariums',
     'post_new_item_label' => 'Add a New Terrarium',
     'post_slug' => '_terrariums',
-    //'post_menu_icon' => 'palette.png',
+    'menu_icon' => 'dashicons-admin-site',
     //'taxonomy_type' => 'artwork-category',
     //'taxonomy_label' => 'Artwork',
     //'taxonomy_slug' => 'artwork'

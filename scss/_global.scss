@@ -16,6 +16,13 @@ body {
   background-size: cover;
 }
 
+hr {
+  padding: 0;
+  margin: 0;
+  border-color: $border-color;
+  border-style: $border-style;
+}
+
 @each $font-weight in 100, 300, 400, 700 {
   .font-weight-#{$font-weight} {
     font-weight: $font-weight !important;
@@ -28,6 +35,15 @@ body {
   }
 }
 
+@each $pos in top, bottom, right, left {
+  .border-#{$pos} {
+    border: $border !important;
+  }
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
 
 .header-color {
   color: $header-color !important;
@@ -48,9 +64,7 @@ body {
 }
 
 .content {
-  margin: 0 2rem 2rem 2rem;
-  padding-top: 1rem;
-  background-color: #fff;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .content-padding-side {
@@ -59,8 +73,8 @@ body {
 }
 
 .content-padding-top {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .narrative {

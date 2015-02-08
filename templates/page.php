@@ -1,4 +1,4 @@
-<div class="row content-padding-side content-padding-top narrative">
+<div class="narrative content-padding-side content-padding-top row bg-white">
   <?php
     if ( have_posts() ) {
       while ( have_posts() ) { the_post(); ?>
