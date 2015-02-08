@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="content">
-  <div class="row content-padding-side content-padding-top narrative">
+  <div class="row content-padding-side content-padding-top narrative bg-white">
     <?php
       if ( have_posts() ) {
         while ( have_posts() ) { the_post(); ?>

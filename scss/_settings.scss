@@ -2,7 +2,10 @@ $background-color: #a79b94;
 $header-color: #1a7f65;
 $header-color-2: #ca9e62;
 $custom-font: 'Roboto Slab', serif;
-$border: 1px solid #ccc;
+$border-color: #ccc;
+$border-width: 1px;
+$border-style: solid;
+$border: $border-width $border-style $border-color;
 
 %background-color {
   background-color: $background-color;

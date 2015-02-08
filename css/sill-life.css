@@ -2187,6 +2187,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+hr {
+  padding: 0;
+  margin: 0;
+  border-color: #ccc;
+  border-style: solid; }
+
 .font-weight-100 {
   font-weight: 100 !important; }
 
@@ -2211,6 +2217,21 @@ body {
 .no-padding-left {
   padding-left: 0 !important; }
 
+.border-top {
+  border: 1px solid #ccc !important; }
+
+.border-bottom {
+  border: 1px solid #ccc !important; }
+
+.border-right {
+  border: 1px solid #ccc !important; }
+
+.border-left {
+  border: 1px solid #ccc !important; }
+
+.bg-white {
+  background-color: #fff !important; }
+
 .header-color {
   color: #1a7f65 !important; }
 
@@ -2221,17 +2242,15 @@ body {
   padding-bottom: 0.5rem; }
 
 .content {
-  margin: 0 2rem 2rem 2rem;
-  padding-top: 1rem;
-  background-color: #fff; }
+  padding: 0 2rem 2rem 2rem; }
 
 .content-padding-side {
   padding-left: 1rem;
   padding-right: 1rem; }
 
 .content-padding-top {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .narrative img {
   padding-bottom: 1rem; }
