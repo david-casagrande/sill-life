@@ -2259,6 +2259,8 @@ hr {
 
 .narrative img {
   padding-bottom: 1rem; }
+.narrative a {
+  color: #ca9e62; }
 
 .header {
   position: relative; }
@@ -2273,7 +2275,7 @@ hr {
     .header .main-nav a {
       color: #fff;
       font-size: 1.25rem;
-      font-weight: 100; }
+      font-weight: 300; }
     .header .main-nav a:hover, .header .main-nav .current-menu-item a {
       color: #000; }
 
