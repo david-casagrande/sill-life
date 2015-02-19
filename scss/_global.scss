@@ -77,10 +77,26 @@ hr {
   padding-bottom: 3rem;
 }
 
+@media #{$small-only} {
+  .content,
+  .content-padding-side {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
 .narrative {
 
   img {
     padding-bottom: 1rem;
   }
 
+  a {
+    color: $header-color-2;
+
+    // &:hover {
+    //   color: #000;
+    // }
+  }
 }
