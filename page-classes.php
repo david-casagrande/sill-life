@@ -9,6 +9,7 @@
             $image = get_field('image');
             $columns = 'large-12 medium-12';
             $booking_url = get_field('booking_url');
+            $gallery = get_field('gallery');
 
             echo "<div class=\"{$columns} columns\">";
               echo "<div class=\"classes-overview\">";
@@ -22,6 +23,9 @@
     ?>
   </div>
   <?php include('templates/all_classes.php'); ?>
+  <div class="row content-padding-side content-padding-top no-padding-top bg-white">
+    <?php include('templates/image_gallery.php'); ?>
+  </div>
 </div>
 
 <?php get_footer(); ?>

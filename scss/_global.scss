@@ -97,10 +97,6 @@ hr {
   }
 
   a {
-    color: $header-color-2;
-
-    // &:hover {
-    //   color: #000;
-    // }
+    @extend %button-color;
   }
 }
