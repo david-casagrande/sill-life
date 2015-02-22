@@ -5,6 +5,7 @@
     create: function(child) {
       var modal = this._createModal();
       modal.appendChild(child);
+
       return document.body.appendChild(modal);
     },
 
@@ -18,9 +19,6 @@
       modal.onclick = function(e) {
         if(e.target === this) { destroyModal(this); }
       }
-      modal.onload = function() {
-        console.log(this);
-      }
       closeButton.onclick = function(e) {
         e.preventDefault();
         destroyModal(modal);
@@ -29,6 +27,8 @@
       //setTimeout(function() {
         modal.className = modal.className + ' open';
       //});
+
+      document.body.style.overflow = 'hidden';
       return modal;
     },
 
@@ -44,6 +44,7 @@
     _destroyModal: function(modal) {
       if(!modal) { return; }
       document.body.removeChild(modal);
+      document.body.style.overflow = null;
     }
 
   };
