@@ -38,10 +38,22 @@
 
   .close-modal {
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 3%;
+    right: 3%;
     font-size: 3rem;
+    line-height: 1.75rem;
     @extend %button-color;
+  }
+
+  @media #{$small-only} {
+    img {
+      max-height: 90%;
+      max-width: 90%;
+    }
+
+    .close-modal {
+      top: 2%;
+    }
   }
 
 }

@@ -2586,7 +2586,7 @@ body, .button, a.button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 2;
   text-align: center;
   display: inline-block;
@@ -2610,6 +2610,44 @@ body, .button, a.button {
     width: auto; }
   .modal .close-modal {
     position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 3rem; }
+    top: 3%;
+    right: 3%;
+    font-size: 3rem;
+    line-height: 1.75rem; }
+  @media only screen and (max-width: 40em) {
+    .modal img {
+      max-height: 90%;
+      max-width: 90%; }
+    .modal .close-modal {
+      top: 2%; } }
+
+body, .sill-life.with-background {
+  background-color: #a79b94; }
+
+.sill-life {
+  min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
+
+.narrative a, .modal .close-modal {
+  color: #f38940; }
+
+body, .button, a.button {
+  font-family: 'Roboto Slab', serif; }
+
+.image-gallery {
+  overflow-x: scroll;
+  white-space: nowrap; }
+  .image-gallery .image-gallery-window {
+    margin-left: -0.125rem; }
+  .image-gallery .image {
+    width: 25%;
+    padding: 0 0.25rem;
+    display: inline-block; }
+    .image-gallery .image img {
+      width: 100%;
+      height: auto; }
+  @media only screen and (max-width: 40em) {
+    .image-gallery .image {
+      width: 33.33%; } }

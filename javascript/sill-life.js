@@ -26,9 +26,9 @@
         destroyModal(modal);
       }
       modal.appendChild(closeButton);
-      setTimeout(function() {
+      //setTimeout(function() {
         modal.className = modal.className + ' open';
-      });
+      //});
       return modal;
     },
 
@@ -63,7 +63,6 @@
     img.src = imgSrc;
     Modal.create(img);
   }
-
 
   window.SILL_LIFE = {
     galleryClick: galleryClick,

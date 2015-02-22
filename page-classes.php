@@ -23,7 +23,7 @@
     ?>
   </div>
   <?php include('templates/all_classes.php'); ?>
-  <div class="row content-padding-side bg-white">
+  <div class="row content-padding-side content-padding-top no-padding-top bg-white">
     <?php include('templates/image_gallery.php'); ?>
   </div>
 </div>

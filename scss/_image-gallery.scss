@@ -1,0 +1,30 @@
+@import './settings';
+
+$image-gallery-image-padding: 0.25rem;
+
+.image-gallery {
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  .image-gallery-window {
+    margin-left: -($image-gallery-image-padding/2);
+  }
+
+  .image {
+    width: 25%;
+    padding: 0 $image-gallery-image-padding;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media #{$small-only} {
+    .image {
+      width: 33.33%;
+    }
+  }
+
+}
