@@ -18,7 +18,7 @@
           include('classes.php');
         endwhile;
       echo "</div>";
-      if($booking_url) { echo "<a href=\"{$booking_url}\" class=\"button\" target=\"_blank\">BOOK NOW</a>"; }
+      if($booking_url) { echo "<a href=\"{$booking_url}\" class=\"button book-now\" target=\"_blank\">BOOK NOW</a>"; }
     echo "</div>";
   ?>
 </div>
