@@ -1909,12 +1909,12 @@ a {
 p {
   font-family: inherit;
   font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.25rem;
+  font-size: 0.938rem;
+  line-height: 1.5;
+  margin-bottom: 1.125rem;
   text-rendering: optimizeLegibility; }
   p.lead {
-    font-size: 1.21875rem;
+    font-size: 1.15675rem;
     line-height: 1.6; }
   p aside {
     font-size: 0.875rem;
@@ -1993,9 +1993,9 @@ code {
 
 /* Lists */
 ul, ol, dl {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.25rem;
+  font-size: 0.938rem;
+  line-height: 1.5;
+  margin-bottom: 1.125rem;
   list-style-position: outside;
   font-family: inherit; }
 
@@ -2054,7 +2054,7 @@ abbr {
 
 /* Blockquotes */
 blockquote {
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.125rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #DDDDDD; }
   blockquote cite {
@@ -2067,7 +2067,7 @@ blockquote {
       color: #28c39b; }
 
 blockquote, blockquote p {
-  line-height: 1.6;
+  line-height: 1.5;
   color: #3ed8b0; }
 
 /* Microformats */
@@ -2513,7 +2513,7 @@ body, .button, a.button {
 
 .care-instructions > h3 {
   font-size: 1.25rem;
-  margin-bottom: 0.313rem; }
+  margin-bottom: 0.5rem; }
 
 .gallery-main-image-wrapper {
   position: relative;
