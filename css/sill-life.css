@@ -2505,6 +2505,9 @@ body, .button, a.button {
 .terrarium-title {
   border-top: 1px solid #ccc;
   padding-top: 2rem; }
+  .no-border-title .terrarium-title {
+    border: 0;
+    padding-top: 1rem; }
 
 .care-instructions > h3 {
   font-size: 1.25rem;

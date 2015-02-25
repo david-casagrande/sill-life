@@ -8,6 +8,11 @@
   @extend %header-color-2;
   border-top: $border;
   padding-top: 2rem;
+
+  .no-border-title & {
+    border: 0;
+    padding-top: 1rem;
+  }
 }
 
 .care-instructions {
