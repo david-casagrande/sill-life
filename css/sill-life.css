@@ -2501,6 +2501,8 @@ body, .button, a.button {
 
 .terrarium {
   padding-bottom: 2rem; }
+  .terrarium .description {
+    margin-top: -0.25rem; }
 
 .terrarium-title {
   border-top: 1px solid #ccc;
@@ -2551,10 +2553,8 @@ body, .button, a.button {
     padding-bottom: 1rem; }
     .classes .class .class-date {
       font-size: 1.25rem; }
-    .classes .class .days-of-the-week {
+    .classes .class .days-of-the-week, .classes .class .time {
       font-size: 0.875rem; }
-    .classes .class .time {
-      font-size: 1rem; }
 
 body, .sill-life.with-background {
   background-color: #a79b94; }
