@@ -12,7 +12,7 @@
             $gallery = get_field('gallery');
 
             echo "<div class=\"{$columns} columns\">";
-              echo "<div class=\"classes-overview\">";
+              echo "<div class=\"classes-overview content-padding-bottom\">";
               the_content();
               echo "</div>";
             echo "</div>";
