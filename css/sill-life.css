@@ -2524,6 +2524,9 @@ body, .button, a.button {
   bottom: 1rem;
   right: 1rem; }
 
+.terrariums-overview {
+  padding-bottom: 1.25rem; }
+
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
