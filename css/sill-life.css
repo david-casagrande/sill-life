@@ -2513,6 +2513,15 @@ body, .button, a.button {
   font-size: 1.25rem;
   margin-bottom: 0.313rem; }
 
+.gallery-main-image-wrapper {
+  position: relative;
+  padding-bottom: 1rem; }
+
+.order-terrarium {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem; }
+
 body, .sill-life.with-background {
   background-color: #a79b94; }
 
