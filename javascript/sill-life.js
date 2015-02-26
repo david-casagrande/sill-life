@@ -65,9 +65,56 @@
     Modal.create(img);
   }
 
+  function galleryNavigate(idx) {
+
+    var gallery = document.getElementsByClassName('image-gallery')[0],
+        galleryWidth = gallery.clientWidth;
+
+    if(idx) {
+      galleryWidth = -galleryWidth;
+    }
+
+    gallery.leftScroll = gallery.scrollLeft += galleryWidth;
+    //scrollTo(gallery, galleryWidth, 400);
+  }
+
+  function scrollTo(element, difference, duration, end) {
+    var nextPosition = element.scrollLeft + difference,
+        perTick = (difference / duration) * 10;
+
+    end = end || nextPosition;
+    setTimeout(function() {
+      element.scrollLeft = element.scrollLeft + perTick;
+      if (element.scrollLeft === end) return;
+      //scrollTo(element, to, duration - 10);
+    }, 10);
+
+    // var to = element.scrollLeft + next,
+    //     difference = element.scrollLeft +
+    //     perTick = difference / 300 * duration,
+    //     to = element.scrollLeft += difference;
+
+    // setTimeout(function() {
+    //   element.scrollLeft = element.scrollLeft + perTick;
+    //   if (element.scrollLeft === to) return;
+    //   scrollTo(element, to, duration - 10);
+    // }, 10);
+
+    // if (duration < 0) return;
+    // var difference = to - element.scrollLeft;
+    // var perTick = difference / duration * 10;
+    //
+    // setTimeout(function() {
+    //     element.scrollLeft = element.scrollLeft + perTick;
+    //     if (element.scrollLeft === to) return;
+    //     scrollTo(element, to, duration - 10);
+    // }, 10);
+  }
+
   window.SILL_LIFE = {
     galleryClick: galleryClick,
-    imageGalleryClick: imageGalleryClick
+    imageGalleryClick: imageGalleryClick,
+    galleryNavigate: galleryNavigate
   };
 
 })();

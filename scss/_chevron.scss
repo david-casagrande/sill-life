@@ -1,0 +1,22 @@
+@import './settings';
+
+.chevron-top {
+  @include chevron('top');
+}
+
+.chevron-right {
+  @include chevron('right');
+}
+
+.chevron-bottom {
+  @include chevron('bottom');
+}
+
+.chevron-left {
+  @include chevron('left');
+  // @include chevron('left', 70px, 15px, #333);
+  // box-shadow: 5px -5px 0 #FFF;
+  // margin-top: 35px;
+  // cursor: pointer;
+  // transition: box-shadow 0.5s ease
+}
