@@ -3,7 +3,7 @@
 $image-gallery-image-padding: 0.25rem;
 
 .image-gallery {
-  overflow-x: hidden;
+  overflow-x: auto;
   white-space: nowrap;
 
   .image-gallery-window {

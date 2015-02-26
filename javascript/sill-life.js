@@ -74,19 +74,41 @@
       galleryWidth = -galleryWidth;
     }
 
-    scrollTo(gallery, gallery.scrollLeft += galleryWidth, 1000);
+    gallery.leftScroll = gallery.scrollLeft += galleryWidth;
+    //scrollTo(gallery, galleryWidth, 400);
   }
 
-  function scrollTo(element, to, duration) {
-    if (duration < 0) return;
-    var difference = to - element.scrollLeft;
-    var perTick = difference / duration * 10;
+  function scrollTo(element, difference, duration, end) {
+    var nextPosition = element.scrollLeft + difference,
+        perTick = (difference / duration) * 10;
 
+    end = end || nextPosition;
     setTimeout(function() {
-        element.scrollLeft = element.scrollLeft + perTick;
-        if (element.scrollLeft === to) return;
-        scrollTo(element, to, duration - 10);
+      element.scrollLeft = element.scrollLeft + perTick;
+      if (element.scrollLeft === end) return;
+      //scrollTo(element, to, duration - 10);
     }, 10);
+
+    // var to = element.scrollLeft + next,
+    //     difference = element.scrollLeft +
+    //     perTick = difference / 300 * duration,
+    //     to = element.scrollLeft += difference;
+
+    // setTimeout(function() {
+    //   element.scrollLeft = element.scrollLeft + perTick;
+    //   if (element.scrollLeft === to) return;
+    //   scrollTo(element, to, duration - 10);
+    // }, 10);
+
+    // if (duration < 0) return;
+    // var difference = to - element.scrollLeft;
+    // var perTick = difference / duration * 10;
+    //
+    // setTimeout(function() {
+    //     element.scrollLeft = element.scrollLeft + perTick;
+    //     if (element.scrollLeft === to) return;
+    //     scrollTo(element, to, duration - 10);
+    // }, 10);
   }
 
   window.SILL_LIFE = {
