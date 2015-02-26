@@ -2655,7 +2655,7 @@ body, .button, a.button {
   font-family: 'Roboto Slab', serif; }
 
 .image-gallery {
-  overflow-x: hidden;
+  overflow-x: auto;
   white-space: nowrap; }
   .image-gallery .image {
     width: 25%;
