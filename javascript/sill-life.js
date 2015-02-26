@@ -65,9 +65,34 @@
     Modal.create(img);
   }
 
+  function galleryNavigate(idx) {
+
+    var gallery = document.getElementsByClassName('image-gallery')[0],
+        galleryWidth = gallery.clientWidth;
+
+    if(idx) {
+      galleryWidth = -galleryWidth;
+    }
+
+    scrollTo(gallery, gallery.scrollLeft += galleryWidth, 1000);
+  }
+
+  function scrollTo(element, to, duration) {
+    if (duration < 0) return;
+    var difference = to - element.scrollLeft;
+    var perTick = difference / duration * 10;
+
+    setTimeout(function() {
+        element.scrollLeft = element.scrollLeft + perTick;
+        if (element.scrollLeft === to) return;
+        scrollTo(element, to, duration - 10);
+    }, 10);
+  }
+
   window.SILL_LIFE = {
     galleryClick: galleryClick,
-    imageGalleryClick: imageGalleryClick
+    imageGalleryClick: imageGalleryClick,
+    galleryNavigate: galleryNavigate
   };
 
 })();

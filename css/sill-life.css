@@ -2655,10 +2655,8 @@ body, .button, a.button {
   font-family: 'Roboto Slab', serif; }
 
 .image-gallery {
-  overflow-x: scroll;
+  overflow-x: hidden;
   white-space: nowrap; }
-  .image-gallery .image-gallery-window {
-    margin-left: -0.125rem; }
   .image-gallery .image {
     width: 25%;
     padding: 0 0.25rem;
@@ -2669,3 +2667,99 @@ body, .button, a.button {
   @media only screen and (max-width: 40em) {
     .image-gallery .image {
       width: 33.33%; } }
+
+.image-gallery-arrow-padding .gallery-control-left, .image-gallery-arrow-padding .gallery-control-right {
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  top: 0;
+  background-color: #ddd;
+  cursor: pointer; }
+  .image-gallery-arrow-padding .gallery-control-left:before, .image-gallery-arrow-padding .gallery-control-right:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+  .image-gallery-arrow-padding .gallery-control-left .chevron-left, .image-gallery-arrow-padding .gallery-control-right .chevron-left, .image-gallery-arrow-padding .gallery-control-left .chevron-right, .image-gallery-arrow-padding .gallery-control-right .chevron-right {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px; }
+
+.image-gallery-arrow-padding {
+  padding: 0 2.25rem;
+  position: relative; }
+  .image-gallery-arrow-padding .gallery-control-left {
+    left: 0; }
+    .image-gallery-arrow-padding .gallery-control-left .chevron-left {
+      margin-left: 11px; }
+  .image-gallery-arrow-padding .gallery-control-right {
+    right: 0; }
+    .image-gallery-arrow-padding .gallery-control-right .chevron-right {
+      margin-right: 11px; }
+
+body, .sill-life.with-background {
+  background-color: #a79b94; }
+
+.sill-life {
+  min-height: 100%; }
+
+.terrarium-title {
+  color: #ca9e62; }
+
+.narrative a, .modal .close-modal {
+  color: #f38940; }
+
+body, .button, a.button {
+  font-family: 'Roboto Slab', serif; }
+
+.chevron-top {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-width: 3px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.chevron-right {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-width: 3px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.chevron-bottom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-width: 3px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.chevron-left {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-width: 3px;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg); }
