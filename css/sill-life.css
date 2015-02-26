@@ -2546,7 +2546,8 @@ body, .button, a.button {
   border-bottom: 1px solid #ccc; }
 
 .all-classes {
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  padding-top: 1rem; }
   .all-classes .book-now {
     margin-bottom: 0.375rem; }
 
