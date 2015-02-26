@@ -3,25 +3,26 @@
   var Modal = {
 
     create: function(child) {
+      this._bindNavigation();
       var modal = this._createModal();
       modal.appendChild(child);
-
       return document.body.appendChild(modal);
     },
 
     _createModal: function() {
       var modal = document.createElement('div'),
           closeButton = this._createCloseButton(),
-          destroyModal = this._destroyModal;
+          self = this;
 
       modal.className = 'modal';
       modal.setAttribute('role', 'dialog');
+      modal.setAttribute('tabindex', '1');
       modal.onclick = function(e) {
-        if(e.target === this) { destroyModal(this); }
+        if(e.target === this) { self._destroyModal(this); }
       }
       closeButton.onclick = function(e) {
         e.preventDefault();
-        destroyModal(modal);
+        self._destroyModal(modal);
       }
       modal.appendChild(closeButton);
       //setTimeout(function() {
@@ -45,6 +46,52 @@
       if(!modal) { return; }
       document.body.removeChild(modal);
       document.body.style.overflow = null;
+      this._unbindNavigation();
+    },
+
+    _bindNavigation: function() {
+      var self = this;
+      window.addEventListener('keyup', this._navigate);
+    },
+
+    _unbindNavigation: function() {
+      window.removeEventListener('keyup', this._navigate);
+    },
+
+    _navigate: function(e) {
+      e.preventDefault();
+      var key = e.keyCode;
+
+      var gallery = document.getElementsByClassName('image-gallery')[0],
+          images = gallery.getElementsByClassName('image'),
+          modal = document.getElementsByClassName('modal')[0],
+          currentImage = modal.getElementsByTagName('img')[0];
+
+
+      function imageIterator(callback) {
+        for(var x = 0; x < images.length; x++) {
+          var href = images[x].childNodes[0].href;
+          if(href === currentImage.getAttribute('src')) {
+            return callback(x);
+          }
+        }
+      }
+
+      if(key === 37) { //left
+        imageIterator(function(index) {
+          var idx = index - 1;
+          if(idx < 0) { return; }
+          var src = images[idx].childNodes[0].href;
+          return currentImage.setAttribute('src', src);
+        });
+      } else if(key === 39) { //right
+        imageIterator(function(index) {
+          var idx = index + 1;
+          if(idx >= images.length) { return; }
+          var src = images[idx].childNodes[0].href;
+          return currentImage.setAttribute('src', src);
+        });
+      }
     }
 
   };
@@ -62,7 +109,8 @@
     var imgSrc = e.target.parentNode.getAttribute('href');
     var img = new Image();
     img.src = imgSrc;
-    Modal.create(img);
+    var modal = Modal.create(img);
+    modal.focus();
   }
 
   function galleryNavigate(idx) {
